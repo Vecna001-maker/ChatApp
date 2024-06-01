@@ -6,20 +6,19 @@ import {
   Link,
 } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
+import HomePage from "./Pages/HomePage";
+import ChatPage from "./Pages/ChatPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <div>
-        <h1>Hello World</h1>
-        <Link to="about">About Us</Link>
-      </div>
+     <HomePage/>
     ),
   },
   {
-    path: "about",
-    element: <div>About</div>,
+    path: "/chats",
+    element:<ChatPage/>
   },
 ]);
 
