@@ -17,7 +17,7 @@ app.use(
 configDotenv();
 connectDB();
 app.use("/api/user", userRoutes);
- const PORT = process.env.PORT || 5173; 
+ const PORT = process.env.PORT || 8000; 
 app.listen(PORT, console.log(`Chal rha hai ${PORT} par`));
 
 
